@@ -5,12 +5,8 @@ const initialState = {
 };
 
 export const getFetch = createAsyncThunk("getFetch", async () => {
-  try {
-    const fethced = await fetch("url");
-    return fethced.data;
-  } catch (error) {
-    console.log(error);
-  }
+  const fethced = await fetch("url");
+  return fethced.data;
 });
 
 export const nameSlice = createSlice({

@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -12,4 +15,31 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.users {
+  padding: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.356);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.103);
+  border-radius: 15px;
+}
+.usersList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 20px 0;
+}
+.userCard {
+  flex: 1;
+  min-width: 350px;
+  padding: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.356);
+}
+input,
+button {
+  padding: 4px 8px;
+  margin: 3px;
+  outline: none;
 }
